@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "546328315381",
+    "project_id": "e-fishery-application",
+    "storage_bucket": "e-fishery-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546328315381:android:9bd70795349cc3529c4cbc",
+        "android_client_info": {
+          "package_name": "com.example.e_fisheryapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546328315381-ro91glo1e20s1p686o1ds8ootjq6ogqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyxKkpUPnWBgR3z4nrxqg4T1dOmas2zGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546328315381-ro91glo1e20s1p686o1ds8ootjq6ogqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

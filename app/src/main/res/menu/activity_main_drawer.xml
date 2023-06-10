@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/fresfishes"
+            android:title="@string/fresh_fishes" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/oil"
+            android:title="@string/oil" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/net"
+            android:title="@string/engine_spare_parts" />
+
+        <item
+            android:id="@+id/fishfarming"
+            android:icon="@drawable/fishfarm"
+            android:title="@string/fish_farming_seeds"
+            />
+
+        <item
+            android:id="@+id/icefac"
+            android:icon="@drawable/fac"
+            android:title="@string/ice_factory"
+            />
+    </group>
+    <item android:title="@string/details">
+        <menu>
+            <item
+                android:id="@+id/orderIntake"
+                android:icon="@drawable/cart"
+                android:title="@string/orders"
+                />
+            <item
+                android:id="@+id/nContact"
+                android:icon="@drawable/contact"
+                android:title="@string/contact"
+                />
+
+        </menu>
+
+    </item>
+</menu>
