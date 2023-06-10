@@ -59,38 +59,26 @@ public class CustOptions extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-
-                switch(item.getItemId()){
-                    case R.id.cfreshfishes:
-                        fragment=new cFreshfishes();
-                        title="Fresh fishes";
-                        break;
-
-                    case R.id.coil:
-                        fragment=new cOil();
-                        title="Oil";
-                        break;
-
-                    case R.id.cnet:
-                        fragment=new cEngine();
-                        title="Engine/Spare parts";
-                        break;
-
-                    case R.id.cfishfarming:
-                        fragment=new cFarming();
-                        title="Fishfaming seeds";
-                        break;
-
-                    case R.id.cicefac:
-                        fragment=new cIcefac();
-                        title="Ice factory";
-                        break;
-
-                    case R.id.cContact:
-                        fragment=new cContact();
-                        title="Contact";
-                        break;
+                if(R.id.cfreshfishes==item.getItemId()){
+                    fragment=new cFreshfishes();
+                    title="Fresh fishes";
+                } else if (R.id.coil == item.getItemId()) {
+                    fragment=new cOil();
+                    title="Oil";
+                } else if (R.id.cnet == item.getItemId()) {
+                    fragment=new cEngine();
+                    title="Engine/Spare parts";
+                }else if (R.id.cfishfarming== item.getItemId()) {
+                    fragment=new cFarming();
+                    title="Fishfaming seeds";
+                }else if (item.getItemId() == R.id.cicefac) {
+                    fragment=new cIcefac();
+                    title="Ice factory";
+                }else{
+                    fragment=new cContact();
+                    title="Contact";
                 }
+
                 getSupportActionBar().setTitle(title);
                 getSupportFragmentManager().beginTransaction().replace(R.id.cframe,fragment).commit();
                 drawerLayout.closeDrawer(GravityCompat.START);
